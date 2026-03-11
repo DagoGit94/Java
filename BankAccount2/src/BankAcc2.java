@@ -72,7 +72,7 @@ public class BankAcc2 {
   public void printStatement(){
       System.out.println(" The account number "+accountNumber+ " hold by "+accountHolder+ " has a current balance of $"+balance);
   }
-    // Method 5: Check if same account type
+    // Method 4: Check if account is old (more than 10 years)
   public boolean isOldAccount(){
         int currentYear = 2026;
         return (currentYear-getYearOpened()) > 10;
@@ -179,4 +179,5 @@ public class BankAcc2 {
         return this.accountHolder.equals(otherAccount.accountHolder);
     }
 }
+
 
